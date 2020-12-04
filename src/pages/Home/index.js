@@ -18,8 +18,6 @@ const Home = () => {
   const reCaptchaRef = useRef()
   const [captcha, setCaptcha] = useState(null)
 
-  console.log(captcha)
-
   const { file, setFile, sendFile, loading, data, setData } = useFile()
 
   const fileDetails = file && fileDetailsFactory(file)
